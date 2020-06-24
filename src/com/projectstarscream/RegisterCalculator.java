@@ -15,17 +15,15 @@ public class RegisterCalculator {
     }
 
     void changeBack() {
-        //TODO format output
         int change = customerPaid - productPrice;
         int getQuarters = change / quarter;
         int getDimes = (change % quarter) / dime;
         int getNickels = (change % dime) / nickel;
         int getPennies = (change % nickel) / penny;
 
-        System.out.println(getQuarters);
-        System.out.println(getDimes);
-        System.out.println(getNickels);
-        System.out.println(getPennies);
+        System.out.println("Your change back is: " + getQuarters + " quarter(s) " + getDimes + " dime(s) " + getNickels
+                + " nickel(s) " + getPennies + " pennie(s). Thank You! Please come again!");
+
     }
 
 
